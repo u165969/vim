@@ -7,6 +7,9 @@ inoremap <C-a> <Esc>^a
 noremap <C-e> <Esc>$a
 noremap <C-a> <Esc>^a
 
+" yank
+nnoremap x "_x
+
 " indent
 vnoremap > >gv
 vnoremap < <gv
@@ -29,6 +32,9 @@ inoremap ( ()<Left>
 " vim-plug
 call plug#begin('~/.vim/plugged')
 " default
+Plug 'morhetz/gruvbox', { 'do': 'cp ~/.vim/plugged/gruvbox/colors/* ~/.vim/colors/' }
+colorscheme gruvbox
+set background=dark
 Plug 'tpope/vim-sensible'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
