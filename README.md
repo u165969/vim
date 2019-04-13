@@ -1,5 +1,3 @@
 # vim 
 ## What Is This?
-This is my vim config files.
-# vim
-# vim
+This is a set of my vim config files.
