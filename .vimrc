@@ -1,5 +1,6 @@
 " default
 set number
+set directory=~/.vim/tmp
 
 " cursor move
 inoremap <C-e> <Esc>$a
@@ -28,6 +29,9 @@ augroup end
 inoremap { {}<Left>
 inoremap [ []<Left>
 inoremap ( ()<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
+inoremap ` ``<Left>
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
@@ -39,6 +43,9 @@ Plug 'tpope/vim-sensible'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+" html, css
+Plug 'mattn/emmet-vim'
 
 " golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
