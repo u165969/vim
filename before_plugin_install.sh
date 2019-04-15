@@ -1,4 +1,8 @@
 #!/bin/bash
+#create a directory for .swp
+mkdir ~/.vim/tmp
+
+#set .vimrc
 cp .vimrc ~/.vimrc
 
 #install vim-plug
