@@ -23,6 +23,7 @@ set smartindent
 augroup fileTypeIndent
 	autocmd!
 	autocmd BufRead,BufNewFile *.go setlocal tabstop=4 shiftwidth=4 softtabstop=4
+	autocmd BufRead,BufNewFile *.js setlocal tabstop=4 shiftwidth=4 softtabstop=4
 augroup end
 
 " auto complete braces
