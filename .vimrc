@@ -48,6 +48,9 @@ Plug 'junegunn/fzf.vim'
 " html, css
 Plug 'mattn/emmet-vim'
 
+" typescript
+Plug 'leafgarland/typescript-vim'
+
 " golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 let g:go_fmt_command = "goimports"
