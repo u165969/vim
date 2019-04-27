@@ -34,6 +34,9 @@ inoremap ' ''<Left>
 inoremap " ""<Left>
 inoremap ` ``<Left>
 
+" yank & paste
+set clipboard=unnamed
+
 " vim-plug
 call plug#begin('~/.vim/plugged')
 " default
