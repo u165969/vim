@@ -8,16 +8,11 @@ $ git clone https://github.com/u165969/vim.git
 $ cd vim
 $ chmod 655 init.sh
 $ ./init.sh
-$ vim ~/.vimrc
 ```
 
-Then, run 'PlugInstall' in your vim editor.
+If need, run those commands in your shell.
 ```
-:PlugInstall
-```
-
-Finally, run those commands in your shell.
-```
-$ chmod 655 config.sh
-$ ./config.sh
+$ cd vim
+$ cat .vim/plugged/vim-go/templates/hello_world.go > ~/.vim/plugged/vim-go/templates/hello_world.go
+$ cat .vim/plugged/vim-go/templates/hello_world_test.go >  ~/.vim/plugged/vim-go/templates/hello_world_test.go
 ```
