@@ -6,7 +6,7 @@ First, run those commands in your shell.
 ```
 $ git clone https://github.com/u165969/vim.git
 $ cd vim
-$ chmod 655 init.sh
+$ chmod +x init.sh
 $ ./init.sh
 ```
 
