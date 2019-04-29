@@ -1,3 +1,27 @@
+call plug#begin('~/.vim/plugged')
+" default
+Plug 'morhetz/gruvbox', { 'do': 'cp ~/.vim/plugged/gruvbox/colors/* ~/.vim/colors/' }
+colorscheme gruvbox
+set background=dark
+Plug 'tpope/vim-sensible'
+Plug 'SirVer/ultisnips'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" html, css
+Plug 'mattn/emmet-vim'
+
+" typescript
+Plug 'leafgarland/typescript-vim'
+
+" golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+let g:go_fmt_command = "goimports"
+let g:go_metalinter_autosave = 1
+
+call plug#end()
+
+
 " default
 set number
 set directory=~/.vim/tmp
@@ -10,6 +34,7 @@ noremap <C-a> <Esc>^a
 
 " yank
 nnoremap x "_x
+set clipboard=unnamed
 
 " indent
 vnoremap > >gv
@@ -34,29 +59,9 @@ inoremap ' ''<Left>
 inoremap " ""<Left>
 inoremap ` ``<Left>
 
-" yank & paste
-set clipboard=unnamed
-
-" vim-plug
-call plug#begin('~/.vim/plugged')
-" default
-Plug 'morhetz/gruvbox', { 'do': 'cp ~/.vim/plugged/gruvbox/colors/* ~/.vim/colors/' }
-colorscheme gruvbox
-set background=dark
-Plug 'tpope/vim-sensible'
-Plug 'SirVer/ultisnips'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-
-" html, css
-Plug 'mattn/emmet-vim'
-
-" typescript
-Plug 'leafgarland/typescript-vim'
-
-" golang
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-let g:go_fmt_command = "goimports"
-let g:go_metalinter_autosave = 1
-
-call plug#end()
+" background-color
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
+highlight Folded ctermbg=none
+highlight EndOfBuffer ctermbg=none
